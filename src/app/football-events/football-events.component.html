@@ -1,0 +1,22 @@
+<table class="table table-striped">
+    <caption>Football</caption>
+    <tbody>
+        <tr *ngFor='let event of events'> 
+            <td>
+                    <tr>
+                        <td scope="row">{{event.startTime | date:'mm:ss'}}</td>
+                        <td colspan="3"><span> {{event.scores.home}} vs {{event.scores.away}}</span></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+            </td>
+        </tr>
+      
+      <tr>
+    </tbody>
+</table>
+
